@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    color: rgb(145, 53, 19);
+}
+
+button {
+    background-color: rgb(145, 53, 19);
+    height: 5vh;
+    width: 8vw;
+    color: rgb(83, 8, 1);
+}
+
+#fetchDateBtn:hover {
+    background-color: rgb(83, 8, 1);
+}
+.page-container {
+    background-color: rgb(255, 245, 234);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.zodiac-title {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.zodiac-carousel {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-btn {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+}
+
+.left-btn, .right-btn {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: rgb(83, 8, 1);
+}
+
+#submitBtn {
+    height: 6vh;
+    width: 8vw;
+    margin-bottom: 10vh;
+}
+.carousel-item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 35vw;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.carousel-item {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 8vh;
+    width: 20vw;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item.active {
+    transform: translateY(-50px);
+}
+
+#result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: rgb(83, 8, 1);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Date Range by Zodiac Sign</title>
+    </head>
+    <body>
+        <div class="page-container">
+            <h2 class="zodiac-title">Enter Your Zodiac Sign</h2>
+
+            <div class="zodiac-carousel">
+                <div class="carousel-item-container">
+                    <div class="carousel-item" data-sign="aries">Aries</div>
+                    <div class="carousel-item" data-sign="taurus">Taurus</div>
+                    <div class="carousel-item" data-sign="gemini">Gemini</div>
+                    <div class="carousel-item" data-sign="cancer">Cancer</div>
+                    <div class="carousel-item" data-sign="leo">Leo</div>
+                    <div class="carousel-item" data-sign="virgo">Virgo</div>
+                    <div class="carousel-item" data-sign="libra">Libra</div>
+                    <div class="carousel-item" data-sign="scorpio">Scorpio</div>
+                    <div class="carousel-item" data-sign="sagittarius">
+                        Sagittarius
+                    </div>
+                    <div class="carousel-item" data-sign="capricorn">
+                        Capricorn
+                    </div>
+                    <div class="carousel-item" data-sign="aquarius">
+                        Aquarius
+                    </div>
+                    <div class="carousel-item" data-sign="pisces">Pisces</div>
+                </div>
+                <div class="carousel-btn">
+                    <button class="left-btn">&#10094;</button>
+                    <button class="right-btn">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="submit-container">
+                <button id="fetchDateBtn">Get Date Range</button>
+            </div>
+
+            <p id="result"></p>
+
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
